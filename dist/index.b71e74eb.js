@@ -566,6 +566,7 @@ user.set({
     name: "Griffin"
 });
 console.log(user.get("name"), user.get("age"));
+console.log("-----------");
 
 },{"./models/user":"4rcHn"}],"4rcHn":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
