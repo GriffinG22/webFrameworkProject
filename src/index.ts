@@ -6,4 +6,4 @@ user.set({ name: "Griffin" });
 
 console.log(user.get("name"), user.get("age"));
 
-console.log("-----------");
+console.log("------------");
