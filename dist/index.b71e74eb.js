@@ -560,7 +560,10 @@ function hmrAccept(bundle, id) {
 var _user = require("./models/user");
 const user = new (0, _user.User)({
     name: "myname",
-    age: 20
+    age: 25
+});
+user.set({
+    name: "Griffin"
 });
 console.log(user.get("name"), user.get("age"));
 
@@ -574,6 +577,9 @@ class User {
     }
     get(propName) {
         return this.data[propName];
+    }
+    set(update) {
+        Object.assign(this.data, update);
     }
 }
 
